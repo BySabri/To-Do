@@ -1,0 +1,188 @@
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px;
+    flex-wrap: wrap;
+
+}
+
+#input {
+    
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 0.8em 2em;
+    margin: 0 10px;
+    background-color: #F8EDE3;
+    color: black;
+}
+
+.task {
+    font-size: 25px;
+}
+
+.button-save:hover{
+    background-color: #3f3e49;
+    color: white;
+}
+
+/* checkbox */
+
+.checkbox-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkbox-area div{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+}
+
+.checkbox{
+    margin: 0 24px 0 10px;
+    transform: scale(1.7);
+}
+
+/* font awesome */
+
+.star{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+}
+
+.all{
+    color:#F8EDE3;  
+}
+
+.priority{
+    color:white;
+    opacity: .5;
+}
+
+.star-icon {
+    position: absolute;
+    top: 7px;   
+    left: 7px;
+
+}
+  
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 0 5px 30px 5px;
+}
+  
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 0.3s ease-in-out; 
+    background-color: #F8EDE3;
+    color: black;
+    border-radius: 5px;
+    width: 210px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+  }
+  
+.card.complete {
+    background-color: #7e7a76;
+    text-decoration: line-through;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: none;
+    transition: none; 
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.card-content p {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    word-break: break-all;
+}
+
+  
+.buttons {  
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+    margin-top: 10px;
+}
+  
+.buttons button {
+    padding: 0 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+.buttons button:focus {
+    outline: none;
+}
+  
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    
+    }
+    .checkbox-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .checkbox-area div{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    
+    }
+  }
